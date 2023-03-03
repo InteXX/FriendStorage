@@ -1,0 +1,48 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.33213.308
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "FriendStorage.UI", "FriendStorage.UI\FriendStorage.UI.vbproj", "{6109CF28-B592-0022-3B78-D9EB1D075447}"
+EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "FriendStorage.DataAccess", "FriendStorage.DataAccess\FriendStorage.DataAccess.vbproj", "{5F1F8BE7-70BA-0D8A-0FF0-6601711FE98E}"
+EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "FriendStorage.UI.Tests", "FriendStorage.UI.Tests\FriendStorage.UI.Tests.vbproj", "{86AE7DCB-B076-4FA6-81BC-A1A0EF1B359F}"
+EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "FriendStorage.Model", "FriendStorage.Model\FriendStorage.Model.vbproj", "{C48B4985-7912-4D2D-B865-E2F7786F11EE}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{7852268E-4149-452A-A34C-A297F410FF9D}"
+	ProjectSection(SolutionItems) = preProject
+		README.md = README.md
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6109CF28-B592-0022-3B78-D9EB1D075447}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6109CF28-B592-0022-3B78-D9EB1D075447}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6109CF28-B592-0022-3B78-D9EB1D075447}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6109CF28-B592-0022-3B78-D9EB1D075447}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5F1F8BE7-70BA-0D8A-0FF0-6601711FE98E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5F1F8BE7-70BA-0D8A-0FF0-6601711FE98E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5F1F8BE7-70BA-0D8A-0FF0-6601711FE98E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5F1F8BE7-70BA-0D8A-0FF0-6601711FE98E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{86AE7DCB-B076-4FA6-81BC-A1A0EF1B359F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{86AE7DCB-B076-4FA6-81BC-A1A0EF1B359F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{86AE7DCB-B076-4FA6-81BC-A1A0EF1B359F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{86AE7DCB-B076-4FA6-81BC-A1A0EF1B359F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C48B4985-7912-4D2D-B865-E2F7786F11EE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C48B4985-7912-4D2D-B865-E2F7786F11EE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C48B4985-7912-4D2D-B865-E2F7786F11EE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C48B4985-7912-4D2D-B865-E2F7786F11EE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {F630923D-31D7-42E8-BA61-E814C0D16390}
+	EndGlobalSection
+EndGlobal
