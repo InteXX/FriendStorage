@@ -18,7 +18,7 @@ Namespace FriendStorage.UI.Startup
         .RegisterType(Of EventAggregator).As(Of IEventAggregator).SingleInstance()
         .RegisterType(Of FileDataService).As(Of IDataService)()
         .RegisterType(Of MainViewModel).AsSelf
-        .RegisterType(Of MainView).AsSelf
+        .RegisterType(Of MainView).AsSelf.SingleInstance()
 
         Return .Build
       End With
