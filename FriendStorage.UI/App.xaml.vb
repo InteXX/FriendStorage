@@ -11,10 +11,14 @@ Namespace FriendStorage.UI
       Dim oMainView As MainView
 
       oBootStrapper = New BootStrapper
-      oContainer = oBootStrapper.Pull
-      oMainView = oContainer.Resolve(Of MainView)
+      oContainer = oBootStrapper.GetContainer
+      'oMainView = oContainer.Resolve(Of MainView)
+      'oMainView.Show()
 
-      oMainView.Show()
+      Using oScope As ILifetimeScope = oContainer.BeginLifetimeScope
+        oMainView = oScope.Resolve(Of MainView)
+        oMainView.Show()
+      End Using
     End Sub
   End Class
 End Namespace

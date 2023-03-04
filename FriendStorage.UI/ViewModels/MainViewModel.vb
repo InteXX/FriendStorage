@@ -91,7 +91,7 @@ Namespace FriendStorage.UI.ViewModels
     Private Function CreateAndLoadFriendEditViewModel(FriendId As Integer?) As IFriendEditViewModel
       Dim oFriendEditViewModel As IFriendEditViewModel
 
-      oFriendEditViewModel = Me.FriendEditViewModelCreator()
+      oFriendEditViewModel = Me.FriendEditViewModelCreator.Invoke
 
       Me.FriendEditViewModels.Add(oFriendEditViewModel)
       oFriendEditViewModel.Load(FriendId)

@@ -14,7 +14,7 @@ Namespace FriendStorage.UI.DataProviders
 
 
     Public Function GetAllFriends() As IEnumerable(Of LookupItem) Implements INavigationDataProvider.GetAllFriends
-      Using oDataService As IDataService = Me.DataServiceCreator()
+      Using oDataService As IDataService = Me.DataServiceCreator.Invoke
         Return oDataService.GetAllFriends
       End Using
     End Function

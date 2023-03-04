@@ -8,7 +8,7 @@ Imports Prism.Events
 
 Namespace FriendStorage.UI.Startup
   Public Class BootStrapper
-    Public Function Pull() As IContainer
+    Public Function GetContainer() As IContainer
       With New ContainerBuilder
         .RegisterType(Of NavigationDataProvider).As(Of INavigationDataProvider)()
         .RegisterType(Of MessageDialogService).As(Of IMessageDialogService)()

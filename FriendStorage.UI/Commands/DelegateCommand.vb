@@ -23,13 +23,13 @@ Namespace FriendStorage.UI.Commands
 
 
     Public Function CanExecute(Parameter As Object) As Boolean Implements ICommand.CanExecute
-      Return Me._CanExecute Is Nothing OrElse Me._CanExecute(Parameter)
+      Return Me._CanExecute Is Nothing OrElse Me._CanExecute.Invoke(Parameter)
     End Function
 
 
 
     Public Sub Execute(Parameter As Object) Implements ICommand.Execute
-      Me._Execute(Parameter)
+      Me._Execute.Invoke(Parameter)
     End Sub
 
 
