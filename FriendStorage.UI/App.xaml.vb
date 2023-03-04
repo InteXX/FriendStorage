@@ -12,9 +12,17 @@ Namespace FriendStorage.UI
 
       oBootStrapper = New BootStrapper
       oContainer = oBootStrapper.GetContainer
+
+      '
+      ' From the official Autofac documentation: "It is important to always
+      ' resolve services from a lifetime scope and not the root container."
+      '
+      ' https://autofac.readthedocs.io/en/latest/lifetime/index.html#basic-concepts-and-terminology
+      '
       'oMainView = oContainer.Resolve(Of MainView)
       'oMainView.Show()
 
+      ' We made MainView a singleton in BootStrapper to prevent disposal here.
       Using oScope As ILifetimeScope = oContainer.BeginLifetimeScope
         oMainView = oScope.Resolve(Of MainView)
         oMainView.Show()
