@@ -12,6 +12,8 @@ Namespace FriendStorage.UI
 
       oBootStrapper = New BootStrapper
       oContainer = oBootStrapper.GetContainer
+      'oMainView = oContainer.Resolve(Of MainView)
+      'oMainView.Show()
 
       Using oScope As ILifetimeScope = oContainer.BeginLifetimeScope
         oMainView = oScope.Resolve(Of MainView)

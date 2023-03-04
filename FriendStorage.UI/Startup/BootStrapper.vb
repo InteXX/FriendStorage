@@ -19,6 +19,7 @@ Namespace FriendStorage.UI.Startup
         .RegisterType(Of FileDataService).As(Of IDataService)()
         .RegisterType(Of MainViewModel).AsSelf
         .RegisterType(Of MainView).AsSelf.SingleInstance()
+        '.RegisterType(Of MainView).AsSelf
 
         Return .Build
       End With
