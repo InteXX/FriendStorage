@@ -1,5 +1,4 @@
-﻿Imports System
-Imports System.Windows
+﻿Imports System.Windows
 Imports FriendStorage.UI.ViewModels
 
 Namespace FriendStorage.UI.Views
