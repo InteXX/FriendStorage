@@ -22,7 +22,7 @@ Namespace FriendStorage.UI
       'oMainView = oContainer.Resolve(Of MainView)
       'oMainView.Show()
 
-      ' We made MainView a singleton in BootStrapper to prevent disposal here.
+      ' We made MainView a singleton in ./Startup/BootStrapper.vb to prevent disposal here.
       Using oScope As ILifetimeScope = oContainer.BeginLifetimeScope
         oMainView = oScope.Resolve(Of MainView)
         oMainView.Show()
